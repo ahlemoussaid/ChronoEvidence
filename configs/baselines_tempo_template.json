@@ -1,0 +1,35 @@
+{
+  "experiment_name": "phase3_baselines_tempo_online",
+  "dataset_dir": "data/processed/tempo",
+  "splits": [
+    "dev",
+    "test"
+  ],
+  "seed": 42,
+  "top_k": 10,
+  "bm25": {
+    "k1": 0.9,
+    "b": 0.4,
+    "remove_stopwords": true
+  },
+  "dense": {
+    "backend": "sentence_transformer_faiss",
+    "model_name": "BAAI/bge-m3",
+    "revision": "main",
+    "batch_size": 32
+  },
+  "hybrid_rrf": {
+    "rrf_k": 60,
+    "weights": [
+      1.0,
+      1.0
+    ],
+    "candidate_depth": 100
+  },
+  "temporal_recency": {
+    "alpha": 0.65,
+    "decay_lambda": 0.35,
+    "reference_date": "2026-11-20",
+    "candidate_depth": 100
+  }
+}

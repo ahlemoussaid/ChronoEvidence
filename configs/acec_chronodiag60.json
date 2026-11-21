@@ -1,0 +1,49 @@
+{
+  "experiment_name": "phase5_acec_vs_baselines_and_ablations",
+  "dataset_dir": "data/processed/chronodiag60",
+  "seed": 42,
+  "top_k": 10,
+  "generation_budget": {
+    "max_passages": 5,
+    "max_context_tokens": 450
+  },
+  "bm25": {
+    "k1": 1.5,
+    "b": 0.75,
+    "remove_stopwords": true
+  },
+  "dense": {
+    "backend": "dense_lsa_svd",
+    "embedding_dim": 96,
+    "seed": 42
+  },
+  "hybrid_rrf": {
+    "rrf_k": 60,
+    "weights": [
+      1.0,
+      1.0
+    ],
+    "candidate_depth": 50
+  },
+  "temporal_recency": {
+    "alpha": 0.65,
+    "decay_lambda": 0.35,
+    "reference_date": "2026-11-20",
+    "candidate_depth": 40
+  },
+  "acec_default": {
+    "budget_calls": 3,
+    "per_call_depth": 6,
+    "tau_C": 0.72,
+    "tau_T": 0.9,
+    "tau_U": 0.3,
+    "abstain_min_C": 0.45,
+    "abstain_max_U": 0.55
+  },
+  "budget_sweep": [
+    1,
+    2,
+    3,
+    4
+  ]
+}

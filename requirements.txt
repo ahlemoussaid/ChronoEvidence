@@ -1,0 +1,12 @@
+# Core scientific & reproducibility stack (verified in Python 3.10+)
+numpy==1.26.3
+scipy==1.12.0
+pandas==2.0.0
+scikit-learn==1.4.0
+matplotlib==3.6.0
+networkx==3.4.2
+pydantic==2.13.4
+torch==2.2.2
+
+# Online / GPU Full-Benchmark IR & NLP Stack (install on internet-enabled machine)
+# Uncomment or install via: pip install -r requirements-full.txt

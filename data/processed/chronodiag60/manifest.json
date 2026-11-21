@@ -1,0 +1,23 @@
+{
+  "dataset_name": "ChronoDiag-60",
+  "version": "1.0.0",
+  "license": "MIT (Internal Synthetic Diagnostic Stress-Test)",
+  "num_documents": 150,
+  "num_queries_total": 60,
+  "num_queries_dev": 18,
+  "num_queries_test": 42,
+  "categories": [
+    "insufficient_evidence",
+    "missing_hop",
+    "outdated_decoy",
+    "partial_amendment",
+    "pub_vs_effective_trap",
+    "unresolved_conflict"
+  ],
+  "sha256": {
+    "corpus.jsonl": "450872bbd5e69c0c4cfab3902523bb7242558f3220e1984f17d0387cb0128cb0",
+    "queries_dev.jsonl": "7a255f056bd495aec39becbe2fee0738d1ae96f9e0cd9a6aed6b3639b97c2775",
+    "queries_test.jsonl": "67c0ffaa54abe542445f6a87304ccccbd275b1f2e38eb53a122935d7035cf17b",
+    "queries_all.jsonl": "140d2ec099daa56705435fc4bc2ad9813c2d4cb1faa5d6c2059c01b7886e86f6"
+  }
+}

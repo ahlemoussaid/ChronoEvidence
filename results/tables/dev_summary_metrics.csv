@@ -1,0 +1,5 @@
+split,method,num_queries_total,num_queries_answerable,index_ms,mean_query_ms,ir_measures_verified,recall@1,recall@3,recall@5,recall@10,mrr@10,ndcg@5,ndcg@10,hit@1,hit@5,completeness@5,temporal_precision@5,temporal_coverage@5,decoy_intrusion@3
+dev,bm25_okapi,18,15,10.51,1.394,False,0.2333,0.5,0.5,0.8,0.4935,0.4528,0.5675,0.3333,0.6,0.4,0.3778,0.7,0.8333
+dev,dense_lsa_svd,18,15,2181.65,8.394,False,0.3667,0.5,0.5333,0.7667,0.609,0.5251,0.6111,0.5333,0.6667,0.4,0.3333,0.7,0.8333
+dev,hybrid_rrf,18,15,2259.89,11.278,False,0.3,0.5,0.5333,0.7333,0.53,0.4932,0.5708,0.4,0.6667,0.4,0.3556,0.7,0.8333
+dev,temporal_recency_hybrid,18,15,0.17,10.784,False,0.1333,0.2333,0.5333,0.8,0.3879,0.3673,0.4635,0.2667,0.7333,0.3333,0.5222,0.8333,0.3333
