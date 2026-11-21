@@ -11,19 +11,7 @@ ChronoEvidence is an Information Retrieval and NLP research project investigatin
 - **Phase 4 (ACEC Controller):** Completed (`src/chronoevidence/{evidence,controller,generation}/`, 14/14 passing unit tests in `tests/test_acec.py`).
 - **Phase 5 (Controlled Evaluation, Ablations & Regression Analysis):** Completed offline on `ChronoDiag-60` (`experiments/run_acec_eval.py`, `reports/experimental_results.md`, `reports/ablation_study.md`, `reports/research_contribution.md`, 3 figures, paired bootstrap CIs & Wilcoxon tests).
 
-## Quickstart (Offline Diagnostic Reproduction)
-```bash
-python3 scripts/build_chronodiag60.py
-python3 -m unittest discover -s tests -v
-python3 experiments/run_baselines.py --config configs/baselines_chronodiag60.json --split all
-```
 
-## Full Public Benchmark Execution (Internet / GPU Machine)
-```bash
-pip install -r requirements-full.txt
-python3 scripts/prepare_tempo.py --dataset-id tempo26/Tempo --out-dir data/processed/tempo
-python3 experiments/run_baselines.py --config configs/baselines_tempo_template.json --split all
-```
 
 ## Key Phase 3 Findings (`ChronoDiag-60` Test Split, `N=42`, `35` Answerable)
 | Method | Recall@5 | MRR@10 | nDCG@10 | Completeness@5 | TempPrec@5 | Decoy@3 (↓) |
